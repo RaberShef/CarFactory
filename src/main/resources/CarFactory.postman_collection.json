@@ -1,0 +1,245 @@
+{
+	"info": {
+		"_postman_id": "ff0c9f6c-2b97-4bd4-ba1e-58aad80ed766",
+		"name": "CarFactory",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Produce a car of type carType",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/produce?carType=",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produce"
+					],
+					"query": [
+						{
+							"key": "carType",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Produce a car of type sedan",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/produce?carType=sedan",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"produce"
+							],
+							"query": [
+								{
+									"key": "carType",
+									"value": "sedan"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "23"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 27 Apr 2021 18:34:23 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Sedan Car has produced."
+				},
+				{
+					"name": "Produce a car of type cabrio",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/produce?carType=cabrio",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"produce"
+							],
+							"query": [
+								{
+									"key": "carType",
+									"value": "cabrio"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "24"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 27 Apr 2021 18:34:45 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Cabrio Car has produced."
+				},
+				{
+					"name": "Produce a car of type hatchback",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/produce?carType=hatchback",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"produce"
+							],
+							"query": [
+								{
+									"key": "carType",
+									"value": "hatchback"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 27 Apr 2021 18:34:58 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Hatchback Car has produced."
+				},
+				{
+					"name": "Produce a car of unknown type",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/produce?carType=suv",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"produce"
+							],
+							"query": [
+								{
+									"key": "carType",
+									"value": "suv"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "75"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 27 Apr 2021 18:35:21 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Unknown car type received, must be of type 'cabrio', 'sedan' or 'hatchback'"
+				}
+			]
+		}
+	]
+}
